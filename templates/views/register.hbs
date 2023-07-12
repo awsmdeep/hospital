@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+   {{>header}}
+       
+    <body>
+  <section>
+    <div class="container">
+      <div class="user signinBx">
+        <div class="imgBx"><img src="https://img.freepik.com/premium-photo/dokter-houdt-stethoscoop-in-de-hand-zonder-gezicht_3544-1562.jpg?w=2000" alt="" /></div>
+        <div class="formBx">
+          <form action="/register" method="POST"">
+            <h2>LOGIN</h2>
+            <input type="text" name="name" placeholder="Username" />
+            <input type="password" name="Lpassword" placeholder="Password" />
+            <input type="submit" name="" value="Login" />
+            <p class="signup">
+              Don't have an account ?
+              <a href="#" onclick="toggleForm();">register</a>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="user signupBx">
+        <div class="formBx">
+          <form action="/register"  method="POST">
+            <h2>Create an account</h2>
+            <input type="text" name="Username" placeholder="Username" />
+            <input type="email" name="emailaddress" placeholder="Email Address" />
+            <input type="password" name="createpassword" placeholder="Create Password" />
+            <input type="password" name="confirmpassword" placeholder="Confirm Password" />
+            <input type="tel" name="phonenumber" placeholder="Phone Number" />
+            <input type="tel" name="ACN" placeholder="Aadhar card number" />
+            <input type="date" id="birthday" name="DOB">
+              <label type="text" name ="BG"for="bloodgroup">Blood Group:</label>
+                <select name="bloodgroup" id="bloodgroup">
+                  <option value="A+">A+</option>
+                  <option value="A-">A-</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="AB+">AB+</option>
+                  <option value="AB-">AB-</option>
+                  <option value="O+">O+</option>
+                  <option value="O-">O-</option>
+                </select>
+            <input type="submit"  value="Register" />
+           
+            <p class="signup">
+              Already have an account ?
+              <a href="#" onclick="toggleForm();">login</a>
+            </p>
+          </form>
+        </div>
+        <div class="imgBx"><img src="https://img.freepik.com/premium-photo/dokter-houdt-stethoscoop-in-de-hand-zonder-gezicht_3544-1562.jpg?w=2000" alt="" /></div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
